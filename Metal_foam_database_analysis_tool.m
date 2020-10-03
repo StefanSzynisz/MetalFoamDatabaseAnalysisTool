@@ -91,10 +91,10 @@ clear all functions;
  setlimit2 = 0;                         % 0 for no limits, 1 for limits
  minmax2 = [0 50];                       % Specify limits
                                         
- setcelltype = 0;                       % Specify which cell type to compare
+ setcelltype = 2;                       % Specify which cell type to compare
                                         % 0 for all cell types, 1 for open cell, 2 for closed cell
                                         
- metals = {'Aluminium';'Ferrous'};      % Specify which metals to include use 'all' to include all metals
+ metals = {'Aluminium'};                  % Specify which metals to include use 'all' to include all metals
                                         % Metals must be separated by semicolons
                                         
  setnumericalfilter = 0;                % Adds a third variable to filter the results by: 0 for off, 1 for on
@@ -102,11 +102,11 @@ clear all functions;
  filterunit = 'MPa';                    % Specify unit
  filterrange = [0 5];                   % Specifiy numerical range to incude in results
  
- groupingvariable = 0;                  % Specify which variable to group data by in scatter graph
+ groupingvariable = 1;                  % Specify which variable to group data by in scatter graph
                                         % 0 for base metal (base_material), 1 for the study that the data came from (label)
                                         % For example 'Ra2009' (= Rabiei A, 2009)
                                  
- exporttable = 0;                       % 0 for no, 1 for yes
+ exporttable = 1;                       % 0 for no, 1 for yes
                                         % Previous tables of the same file name
                                         % must be deleted
  
